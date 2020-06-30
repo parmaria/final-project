@@ -1,0 +1,362 @@
+html{
+  margin:0;
+  padding: 0;
+}
+
+header{
+  background-color: #9f75b3;
+  
+  font-family: 'Chelsea Market', cursive;
+  width: auto;
+  height: 120px;
+  font-size: 40px;
+  justify-content: space-around;
+  display: flex;
+  align-items: center;
+
+  padding: 20px;
+}
+header div{
+  font-size: 20px;
+}
+.connect a{
+  color: rgb(42, 156, 226);
+  text-shadow: 2px 2px rgb(9, 33, 48);
+  display: block;
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+}
+.logsign{
+  margin: 0;
+  text-align: center;
+  
+}
+.connect a:hover{
+  font-size: 30px;
+}
+h1 a{
+  color: #FEDD02 ;
+  text-shadow: 10px 5px rgb(9, 33, 48);
+}
+main{
+
+}
+body{
+  font-family: sans-serif;
+
+  background-color: rgba(143, 200, 236, 0.116);
+  padding: 0;
+  margin: 0;
+  width: auto;
+  font-size: 25px;
+
+
+}
+#menubar{
+  list-style-type:none;
+ background-color: #67E4A8 ;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+}
+/* *****το παραθυρο όταν κανεις hover sto cart**** */
+#cart a{
+  font-size: 40px;
+}
+
+
+#cart:hover ~ #cartfastview{
+  display: inline;
+
+}
+
+#cartfastview{
+  display: none;
+  position: absolute;
+  border: 1px solid;
+  z-index: 1;
+  background-color: rgba(201, 231, 250, 0.986) ;
+
+}
+.fastcartitems{
+  font-size: 50px;
+}
+
+/* *********menu με τα είδη********** */
+
+.menuitems{
+  text-align: center;
+  padding: 0px 100px;
+  text-decoration: none;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 40px;
+}
+
+
+a{
+  text-decoration: none;
+  text-emphasis: none;
+  color: rgb(0, 0, 0) ;
+}
+
+
+.menuitems:hover{
+  background-color: rgba(97, 96, 96, 0.582);
+
+}
+
+.icons{
+  width: 30px;
+}
+
+/* ***********footer********* */
+#copyrights{
+  width: auto;
+  background-color:#67E4A8;
+  margin: 0;
+  padding: 0;
+}
+footer p{
+  margin: 0;
+}
+/* *******Το slideshow του index ****** */
+
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: 10px 0;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+ .product_border{
+ display: flex;
+  flex-wrap: wrap; 
+  justify-content: center;
+
+
+}
+.product_wtf{
+  padding: 15px;
+  margin: 30px;
+  width: 25%;
+  box-shadow: 0 1px 8px -4px #000;
+  border-radius: 10%;
+  background-color: white;
+
+}
+.product_wtf a{
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.photo-show{
+  height: 300px;
+  width: 300px;
+  justify-content: center;
+} 
+.product_name{
+  font-weight: bold;
+}
+.connect{
+  display: flex;
+  /* text-align: center;
+  justify-content: center; */
+  flex-direction: column;
+  margin: 100px;
+ 
+}
+.logsignform{ 
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 200px;
+ 
+}
+#cracc{
+  text-align: center;
+}
+
+
+input[type=text], input[type=password],input[type=email]  {
+  width: 500px;
+  padding: 15px 20px;
+  font-size: 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid rgba(0, 17, 255, 0.651);
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=submit]{
+
+}
+
+/* ***EACH PRODUCT CSS*** */
+.prod_general{
+  background-color: white;
+  display: flex;
+  box-shadow: 0 1px 8px -4px #000;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-top: 30px;
+
+}
+.prod.left{
+
+}
+.prod_right{
+margin: 20px;
+
+}
+.prod_name{
+
+font-weight:normal;
+}
+
+.prod_container{
+  width: 1400px;
+  display: flex;
+
+
+}
+.prod_photo{
+  height: 500px;
+  width: auto;
+
+}
+.prod_price{
+
+ font-size: 40px;
+}
+.addtocart {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: rgb(0, 0, 0);
+  background-color: #9f75b3;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+.addtocart:hover {
+  background-color: #982bca;
+}
+
+.addtocart:active {
+  background-color: #9f75b3;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+h3{
+  text-align: center;
+}
+
+.call-to-login{
+  font-size: 20px;
+  color: red;
+}
+.loginout{
+  text-align: center;
+}
+.loginout h1{
+  font-size: 50px;
+}
+.missyou{
+  font-family: 'Amatic SC', cursive;
+  font-size: 60px;
+  padding-top: 160;
+  padding-bottom: 160px;
+}
+.call-to-enter {
+
+  padding: 16px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s; 
+  border: 2px solid rgba(0, 17, 255, 0.651);
+}
+
+
+.call-to-enter:hover {
+  background-color: rgba(0, 17, 255, 0.651);
+  color: white;
+}
